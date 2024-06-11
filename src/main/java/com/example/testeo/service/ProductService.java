@@ -48,7 +48,7 @@ public Page<ProductDto> convertProductPage(Page<ProductModel> productPage) {
 
     return new PageImpl<>(productDTOs, productPage.getPageable(), productPage.getTotalElements());
 }
-
+//Toma los atributos deseados del ProductModel
 private ProductDto convertProductDto(ProductModel product) {
     ProductDto dto = new ProductDto();
     dto.setId(product.getId());

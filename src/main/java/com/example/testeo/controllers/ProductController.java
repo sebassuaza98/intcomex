@@ -40,7 +40,7 @@ public class ProductController {
         return new ResponseEntity<>(productDTOPage, HttpStatus.OK);
     }
 
-    @GetMapping("/list/{id}/picture")
+    @GetMapping("/list/picture/{id}")
     public ResponseEntity<Object> getProductCategoryPicture(@PathVariable("id") Long id) {
         Optional<ProductModel> product = productService.getProductById(id);
         if (product.isPresent()) {
