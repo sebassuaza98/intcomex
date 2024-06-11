@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 import com.example.testeo.models.CategoryModel;
 
 public class ProductRequest {
-
+//Este modelo se creo con el fin controlar el retorno de la peticion "/listPage" , al modelar los datos.
     private String name;
     private CategoryModel category;
     private String quantityPerUnit;
